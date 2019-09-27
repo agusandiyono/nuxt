@@ -1,7 +1,7 @@
 const webpack = import('webpack');
 
 export default {
-    mode : 'spa',
+    mode : 'universal',
     /*
   ** Headers of the page
   */

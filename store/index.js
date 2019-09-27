@@ -1,4 +1,4 @@
-import axios from 'axios';
+// import axios from 'axios';
 
 // create store
 export const state = () => ({
@@ -21,13 +21,13 @@ export const mutations = {
 
 // actions
 export const actions = {
-    async nuxtServerInit({ commit }) {
-        const { data } = await axios.get(
-            'http://api-solite.test/v1/app'
-        );
-        commit('SET_APPS', data);
-    }
-    // setApps({ commit }, apps) {
-    //     commit('SET_APPS', apps);
+    // async nuxtServerInit({ commit }) {
+    //     const { data } = await axios.get(
+    //         'http://api-solite.test/v1/app'
+    //     );
+    //     commit('SET_APPS', data);
     // }
+    setApps({ commit }, apps) {
+        commit('SET_APPS', apps);
+    }
 };
