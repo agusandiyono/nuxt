@@ -1,0 +1,35 @@
+.nav-link > .nuxt-link-exact-active .nuxt-link-active{
+    background-color: #007bff;
+    color: #fff;
+}
+
+@mixin sidebar-color($color) {
+    .nav-sidebar > .nav-item {
+      & > .nuxt-link-active {
+        background-color: #007bff;
+        color:  #fff;
+      }
+    }
+  }
+
+/* .nav-item:active{
+    background-color: #007bff;
+    color: #fff !important;
+}
+
+.nav-item:visited{
+  background-color: #007bff;
+  color: #fff !important;
+} */
+
+.nuxt-link-exact-active{
+  background-color: #007bff;
+    color: #fff !important;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
